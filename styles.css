@@ -195,126 +195,27 @@ footer{
 }
 
 /* Media Query for mobile devices (width 768px and below) */
-@media (max-width: 768px) {
-
-    /* Adjust the logo size and margin */
-    .logo {
-        width: 30%;
-        margin: 10px;
-    }
-
-    /* Make the navigation bar vertically stacked on small screens */
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-        padding: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    /* Adjust the buttons in the title section */
-    .name-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .play-btn, .info-btn {
-        margin: 10px 0;
-        width: 100%;
-        justify-content: center;
-    }
-
-    /* Adjust the title and buttons margin */
-    .title {
-        margin-left: 20px;
-        margin-top: 100px;
-    }
-
-    .title .name h1 {
-        font-size: 60px;
-    }
-
-    /* Resize and stack images in the middle section */
-    .images {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .images img {
-        width: 80%; /* Adjust the image width */
-        margin: 15px 0;
-    }
-
-    /* Adjust the footer for better mobile layout */
-    footer {
-        padding: 10px;
-    }
-
-    .socials {
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .socials img {
-        margin: 0 5px;
-    }
-
-    /* Footer links layout */
-    .artists {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .artists ul {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .highlight {
-        margin: 20px auto;
-        text-align: center;
-    }
-
-    .copyright {
-        text-align: center;
-    }
-}
-
-/* Media Query for extra small mobile devices (width 480px and below) */
-@media (max-width: 480px) {
-
-    /* Further reduce the logo size */
-    .logo {
-        width: 50%;
-        margin: 5px;
-    }
-
-    /* Adjust title font size for small screens */
-    .title .name h1 {
-        font-size: 40px;
-    }
-
-    /* Ensure buttons fill the screen width on small devices */
-    .play-btn, .info-btn {
-        width: 100%;
-    }
-
-    /* Reduce image sizes even more for small screens */
-    .images img {
-        width: 90%; /* Adjust the image width */
-    }
-
-    /* Adjust footer spacing and alignment */
-    .artists ul li {
-        font-size: 12px;
-    }
+@media (max-width: 600px) 
+{
+ nav{
+    display: inline-block;
+ }
+ .logo
+ {
+    width: 60px;
+ }
+ .images
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ footer
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
 }
